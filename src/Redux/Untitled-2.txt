@@ -1,0 +1,4 @@
+REDUCER ==> 
+1)Name 
+2)Array
+3)REDUCER ==> action 

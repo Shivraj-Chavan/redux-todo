@@ -1,0 +1,58 @@
+1) REDUCUER
+
+import { createSlice } from '@reduxjs/toolkit'
+
+const TodoSystem=createSlice({
+
+    name:"TODO",
+    initialState:[],
+    reducers:{
+        actionName(state,action){
+
+        },
+        actionName2(state,action){
+
+        }
+
+
+    }
+
+})
+
+export const {actionName,actionName2} = TodoSystem.actions //addtodo home page pe, removetodo todo page pe  
+export default TodoSystem.reducer //ye jayga store page pe 
+
+
+
+<!--------------------------------------------------------------------->
+
+
+2)Store code ===> 
+
+import { configureStore } from "@reduxjs/toolkit";
+import TodoSystem from "./TodoReducer"
+
+
+const store=configureStore({
+    reducer:{
+        SelectName:Reducer
+    }
+})
+
+export default store
+
+<!------------------------------------------->
+
+3) useSelector
+
+const mytodo=useSelector((state)=>state.SelectName)
+
+
+
+
+<!------------------------------------------->
+4)useSelector
+
+const fun=()=>{
+        dispatch(addTodo(todo))
+}
